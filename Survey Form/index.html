@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Sign up for [insert corportation name here]!</h1>
+
+    <p id="description">
+      Want to get access to our [insert services] today? Sign up!
+    </p>
+
+    <form id="survey-form" class="main-holder" method="post">
+      <fieldset>
+        <label id="name-label" class="inline"
+          >Enter your name here:
+          <input id="name" placeholder="John Doe" required
+        /></label>
+        <label id="email-label" class="inline"
+          >Enter your email:
+          <input
+            id="email"
+            placeholder="JohnDoe@example.com"
+            required
+            type="email"
+        /></label>
+        <label id="number-label"
+          >Enter your age:
+          <input id="number" type="number" min="13" max="150" placeholder="13"
+        /></label>
+      </fieldset>
+      <!--
+        Seperator
+      -->
+      <fieldset>
+        <h4>Will this account be for a PC or mobile device?</h4>
+
+        <label id="pc-label"
+          ><input type="radio" name="platform" value="PC" />PC</label
+        >
+        <label id="mobile-label"
+          ><input type="radio" name="platform" value="Mobile" />Mobile</label
+        >
+        <br />
+        <label id="dropdown-label"
+          >Select your account type:
+          <select id="dropdown">
+            <option value="">Select One</option>
+            <option value="1">Personal</option>
+            <option value="2">Non-Profit</option>
+            <option value="3">Corporate</option>
+          </select>
+        </label>
+      </fieldset>
+      <!--
+        Seperator
+      -->
+
+      <fieldset>
+        <label id="bio-label"
+          >Add a description of yourself:
+          <textarea
+            id="bio"
+            placeholder="My name is John doe..."
+            rows="3"
+            cols="30"
+          >
+          </textarea>
+        </label>
+
+        <label id="tos-agree"
+          >Do you agree to our <a href="www.example.com">Terms of Service?</a>
+          <input type="checkbox" value="tos" />
+        </label>
+        <label id="newsletter-agree"
+          >Would you like to sign up to our newsletter?
+          <input type="checkbox" value="newletter" />
+        </label>
+      </fieldset>
+      <input type="submit" name="submit" id="submit" />
+    </form>
+  </body>
+</html>
